@@ -34,7 +34,7 @@ header{
     height: 3rem;
     width: 30rem;
     background-image: linear-gradient(#ad2210, rgba(113, 113, 51, 0.441),rgba(219, 244, 79, 0.608));
-    border-bottom-left-radius:90px;
+    border-bottom-left-radius: 90px;
 }
 .sub_banner li{
     line-height: 3rem;
@@ -53,10 +53,8 @@ header{
     color: black;
     font-weight: 590;
     transition: 0.4s linear;
-    
 }
-
-.sub_header_main {
+.sub_header_main{
     height: 5rem;
     width: 100%;
     display: flex;
@@ -64,7 +62,6 @@ header{
     border-top: 1px rgb(228, 213, 213) solid ;
     border-bottom: 1px rgb(228, 213, 213) solid ;
 }
-
 .nav_header_left{
 width: 70%;
 display: flex;
@@ -73,16 +70,47 @@ padding-left: 2rem;
 list-style: none;
 font-size: 1.2rem;
 }
-.nav_header_left li a{
+.nav_header_left > li> a{
     text-decoration: none;
     color: white;
     padding: 0 1.2rem;
     display: block;
 }
-.nav_header_left li:hover a{
+.nav_header_left > li{
+    position: relative;
+    list-style: none;
+    top: 0;
+}
+.nav_header_left > li:hover >a{
     background-color: aliceblue;
     color: orangered;
-    transition: 0.4s linear;
+}
+.sub_banner_con{ 
+    position: absolute;
+    display: none;
+    list-style-type: none;
+}
+.sub_banner_con > li {
+    position: relative;
+    width: 10rem;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: rgb(112, 255, 255, 0.5);
+    
+    
+}
+.sub_banner_con > li a{
+    text-decoration: none;
+    width: 100%;
+    display: flex; 
+    padding-left: 15px;
+}
+.nav_header_left > li:hover > .sub_banner_con{
+    display: block;
+    z-index: 4;
+}
+.sub_banner_con > li:hover{
+background-color: bisque;
 }
 
 .nav_header_right{
@@ -185,7 +213,7 @@ display: block;
     font-size: 1.4rem;
     color:rgb(229, 196, 196);
     font-weight: 800;
-    box-shadow: 1px 100px rgb(245, 243, 243);
+  
 }
 .price_icons_right{
 position: relative;
@@ -306,6 +334,16 @@ transition:  0.9s linear;
 /* the end inf_down */
 /* the end products */
 
+.font_log_in{
+    height: 60rem;
+    
+}
+fieldset{
+   width: 50rem;
+}
+fieldset {
+    padding: 0 2rem;
+}
 
 
 

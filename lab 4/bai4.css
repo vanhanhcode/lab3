@@ -28,6 +28,9 @@ body{
     position: relative;
     box-shadow: 2px 1px 5px gray;
 }
+.products li:hover{
+    box-shadow: 1px 0px 10px blue;
+}
 .products li .title_prd{
     color: blue;
     display: flex;
